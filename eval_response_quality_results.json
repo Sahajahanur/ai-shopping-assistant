@@ -1,0 +1,118 @@
+{
+  "num_test_cases": 4,
+  "average_relevance": 4.75,
+  "average_correctness": 5.0,
+  "average_format_compliance": 5.0,
+  "overall_average": 4.916666666666667,
+  "all_passed": true,
+  "results": [
+    {
+      "id": "RQ-1",
+      "query": "I want to buy organic honey with 4.5+ rating and under $20.",
+      "agent_response": "Here are the organic honey options that match your criteria (rating\u202f4.5\u202f+ and under\u202f$20):\n\n1. **Organic Raw Honey** (Product ID: 1) \u2013 Price: $14.99 | Rating: 4.62 \u2605 (4 reviews) | Organic: Yes  \n2. **Organic Acacia Honey** (Product ID: 7) \u2013 Price: $17.99 | Rating: 4.75 \u2605 (4 reviews) | Organic: Yes  \n3. **Organic Buckwheat Honey** (Product ID: 5) \u2013 Price: $18.99 | Rating: 4.62 \u2605 (4 reviews) | Organic: Yes  \n\nWhich one would you like to purchase?",
+      "scores": {
+        "relevance": 5,
+        "correctness": 5,
+        "format_compliance": 5
+      },
+      "passed": true,
+      "details": {
+        "relevance": {
+          "score": 5,
+          "explanation": "The assistant directly provides a list of organic honeys that meet the rating and price criteria, exactly addressing the user's request without any irrelevant information."
+        },
+        "correctness": {
+          "score": 5,
+          "explanation": "All three listed products (IDs 1, 5, 7) match the store catalog: they are organic, priced under $20, and have ratings of 4.5 or higher. No hallucinated items or incorrect details are present."
+        },
+        "format_compliance": {
+          "score": 5,
+          "explanation": "The response uses a clear numbered list (1., 2., 3.) and includes the required fields: Product ID, Name, Price, Rating, and Organic status."
+        },
+        "passed": true,
+        "summary": "The assistant's answer is fully relevant, accurate, and properly formatted."
+      }
+    },
+    {
+      "id": "RQ-2",
+      "query": "Show me oat products in the store.",
+      "agent_response": "Here are the oat products we have:\n\n1. Rolled Oats (Product ID: 18) - Price: $5.49 | Rating: 4.33 \u2605 (3 reviews) | Organic: No  \n2. Steel-Cut Oats (Product ID: 20) - Price: $6.99 | Rating: 3.83 \u2605 (3 reviews) | Organic: No",
+      "scores": {
+        "relevance": 4,
+        "correctness": 5,
+        "format_compliance": 5
+      },
+      "passed": true,
+      "details": {
+        "relevance": {
+          "score": 4,
+          "explanation": "The response lists oat products relevant to the query, covering Rolled Oats and Steel-Cut Oats, but omits Oat Milk, so it is a strong but not complete answer."
+        },
+        "correctness": {
+          "score": 5,
+          "explanation": "All product details (IDs, prices, ratings, organic status) match the store catalog with no hallucinations."
+        },
+        "format_compliance": {
+          "score": 5,
+          "explanation": "The assistant uses a clear numbered list (1., 2.) and includes all required details for each product."
+        },
+        "passed": true,
+        "summary": "The answer is relevant, fully correct, and properly formatted, though it could include Oat Milk for completeness."
+      }
+    },
+    {
+      "id": "RQ-3",
+      "query": "What have I ordered before?",
+      "agent_response": "Here are your recent orders:\n\n1. Rolled Oats (Product ID: 18) - Price: $5.49 - Ordered on: 2026\u201109\u201129 16:39:07  \n2. Organic Acacia Honey (Product ID: 7) - Price: $17.99 - Ordered on: 2026\u201109\u201129 11:33:49",
+      "scores": {
+        "relevance": 5,
+        "correctness": 5,
+        "format_compliance": 5
+      },
+      "passed": true,
+      "details": {
+        "relevance": {
+          "score": 5,
+          "explanation": "The assistant directly answers the user's request by listing the previous orders without any irrelevant information."
+        },
+        "correctness": {
+          "score": 5,
+          "explanation": "The order details (product names, IDs, prices, and timestamps) exactly match the store's past orders database."
+        },
+        "format_compliance": {
+          "score": 5,
+          "explanation": "The response uses a clear numbered list (1., 2.) and includes the required details for each past order."
+        },
+        "passed": true,
+        "summary": "The answer is fully relevant, accurate, and correctly formatted as a numbered list."
+      }
+    },
+    {
+      "id": "RQ-4",
+      "query": "Recommend non-dairy milk options under $5.",
+      "agent_response": "Here are some non\u2011dairy milk options that cost $5 or less:\n\n1. Soy Milk (Product ID: 32) \u2013 Price: $3.49 | Rating: 3.67 \u2605 (3 reviews) | Organic: No  \n2. Organic Coconut Milk (Product ID: 31) \u2013 Price: $3.99 | Rating: 4.5 \u2605 (3 reviews) | Organic: Yes  \n3. Oat Milk (Product ID: 30) \u2013 Price: $4.49 | Rating: 4.33 \u2605 (3 reviews) | Organic: No  \n4. Organic Almond Milk (Product ID: 29) \u2013 Price: $4.99 | Rating: 4.5 \u2605 (3 reviews) | Organic: Yes  \n\nLet me know if any of these look good, and I can help you add it to your cart!",
+      "scores": {
+        "relevance": 5,
+        "correctness": 5,
+        "format_compliance": 5
+      },
+      "passed": true,
+      "details": {
+        "relevance": {
+          "score": 5,
+          "explanation": "The assistant directly answers the request for non\u2011dairy milk options under $5 with no unrelated information."
+        },
+        "correctness": {
+          "score": 5,
+          "explanation": "All four products, their prices, ratings, review counts, and organic status exactly match the store catalog data."
+        },
+        "format_compliance": {
+          "score": 5,
+          "explanation": "The response uses a clear numbered list (1., 2., 3., 4.) and includes the required fields: Product ID, Name, Price, Rating, and Organic status."
+        },
+        "passed": true,
+        "summary": "The assistant provided a fully relevant, accurate, and properly formatted list of non\u2011dairy milks under $5."
+      }
+    }
+  ]
+}

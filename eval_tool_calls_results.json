@@ -1,0 +1,67 @@
+{
+  "total": 6,
+  "passed": 6,
+  "accuracy_percent": 100.0,
+  "results": [
+    {
+      "id": "TC-1",
+      "query": "I want organic honey under $20",
+      "expected_tool": "search_products",
+      "actual_args": {
+        "is_organic": true,
+        "max_price": 20,
+        "query": "honey"
+      },
+      "passed": true
+    },
+    {
+      "id": "TC-2",
+      "query": "Show me oats",
+      "expected_tool": "search_products",
+      "actual_args": {
+        "is_organic": null,
+        "max_price": null,
+        "query": "oats"
+      },
+      "passed": true
+    },
+    {
+      "id": "TC-3",
+      "query": "What is the rating for product 7?",
+      "expected_tool": "get_rating",
+      "actual_args": {
+        "product_id": 7
+      },
+      "passed": true
+    },
+    {
+      "id": "TC-4",
+      "query": "What have I ordered before?",
+      "expected_tool": "get_order_history",
+      "actual_args": {
+        "limit": 10
+      },
+      "passed": true
+    },
+    {
+      "id": "TC-5",
+      "query": "Please remember that I always prefer organic",
+      "expected_tool": "set_saved_preference",
+      "actual_args": {
+        "key": "prefer_organic",
+        "value": "true"
+      },
+      "passed": true
+    },
+    {
+      "id": "TC-6",
+      "query": "Remember that I never want items over $20",
+      "expected_tool": "set_saved_preference",
+      "actual_args": {
+        "key": "max_price",
+        "value": "20"
+      },
+      "passed": true
+    }
+  ]
+}
